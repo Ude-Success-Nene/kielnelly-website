@@ -171,3 +171,60 @@ window.addEventListener("load", () => {
     document.body.style.opacity = "1";
 
 });
+
+const printingForm =
+document.getElementById("printingForm");
+
+printingForm.addEventListener(
+"submit",
+function(e){
+
+e.preventDefault();
+
+const name =
+document.getElementById("printName").value;
+
+const phone =
+document.getElementById("printPhone").value;
+
+const email =
+document.getElementById("printEmail").value;
+
+const service =
+document.getElementById("printService").value;
+
+const copies =
+document.getElementById("copies").value;
+
+const instructions =
+document.getElementById("instructions").value;
+
+const message =
+`Hello KielNelly Computer Services,
+
+New Printing Request
+
+Name: ${name}
+
+Phone: ${phone}
+
+Email: ${email}
+
+Service: ${service}
+
+Copies: ${copies}
+
+Instructions:
+${instructions}
+
+I will send my document shortly.`;
+
+const whatsappURL =
+`https://wa.me/2349022343902?text=${encodeURIComponent(message)}`;
+
+window.open(
+whatsappURL,
+"_blank"
+);
+
+});

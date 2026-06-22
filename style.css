@@ -634,3 +634,105 @@ body{
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+/* PRINTING REQUEST SECTION */
+
+.printing-request{
+
+padding:60px 20px;
+
+text-align:center;
+
+background:#ffffff;
+
+}
+
+.printing-request h2{
+
+color:#0b2f75;
+
+margin-bottom:20px;
+
+}
+
+#printingForm{
+
+max-width:600px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+#printingForm input,
+#printingForm select,
+#printingForm textarea{
+
+padding:15px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+#printingForm textarea{
+
+min-height:120px;
+
+}
+
+#printingForm button{
+
+border:none;
+
+cursor:pointer;
+
+}
+/* Pricing Section */
+
+.pricing{
+    padding:60px 20px;
+    text-align:center;
+    background:#f8f9fa;
+}
+
+.pricing h2{
+    margin-bottom:40px;
+    color:#0a2e73;
+}
+
+.pricing-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.price-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-8px);
+}
+
+.price-card h3{
+    color:#0a2e73;
+    margin-bottom:10px;
+}
+
+.price-card p{
+    font-size:20px;
+    font-weight:bold;
+    color:#28a745;
+}

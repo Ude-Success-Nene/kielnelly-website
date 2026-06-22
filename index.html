@@ -7,7 +7,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <body id="top"><header><div class="logo">
 <h2>KielNelly</h2>
 </div><nav>
-<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#training">Training</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#training">Training</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul>
 </nav></header><section class="hero" id="home"><div class="hero-content"><img
 src="logo.jpg"
 alt="KielNelly Logo"
@@ -73,7 +73,45 @@ We are committed to empowering individuals and businesses through practical comp
 
     <a href="#registration" class="btn">Register Now</a>
 </section>
+<section class="pricing" id="pricing">
 
+    <h2>Our Price List</h2>
+
+    <div class="pricing-container">
+
+        <div class="price-card">
+            <h3>Printing (B/W)</h3>
+            <p>₦100 per page</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Printing (Color)</h3>
+            <p>₦200 per page</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Photocopy</h3>
+            <p>₦100 per page</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Lamination</h3>
+            <p>₦500</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Scanning</h3>
+            <p>₦200</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Graphics Design</h3>
+            <p>Contact Us</p>
+        </div>
+
+    </div>
+
+</section>
 <section class="registration reveal" id="registration">
     <h2>Training Registration</h2>
 
@@ -147,7 +185,65 @@ Do you offer CV writing services?
 Can I upload documents for printing?
 </button><div class="faq-answer">
 <p>Yes. Our website will support document uploads.</p>
-</div></div></section><section class="contact" id="contact">
+</div></div><section class="printing-request" id="printing">
+
+    <h2>Document Printing Request</h2>
+
+    <p>
+        Need documents printed urgently?
+        Fill the form below and submit your request.
+        After submission, WhatsApp will open so you can send your document directly.
+    </p>
+
+    <form id="printingForm">
+
+        <input type="text"
+               id="printName"
+               placeholder="Full Name"
+               required>
+
+        <input type="tel"
+               id="printPhone"
+               placeholder="Phone Number"
+               required>
+
+        <input type="email"
+               id="printEmail"
+               placeholder="Email Address">
+
+        <select id="printService" required>
+
+            <option value="">
+                Select Service
+            </option>
+
+            <option>Printing</option>
+
+            <option>Photocopying</option>
+
+            <option>Lamination</option>
+
+            <option>Scanning</option>
+
+            <option>Graphics Design</option>
+
+        </select>
+
+        <input type="number"
+               id="copies"
+               placeholder="Number of Copies">
+
+<textarea id="instructions" placeholder="Special Instructions"></textarea>
+
+        <button type="submit"
+                class="btn">
+            Send Request
+        </button>
+
+    </form>
+
+</section>
+</section><section class="contact" id="contact">
     <section class="contact reveal" id="contact">
 
 <h2>Contact Us</h2>
@@ -304,6 +400,8 @@ Connect • Create • Learn • Succeed
 <a href="#about">About</a>
 
 <a href="#services">Services</a>
+
+<a href="#pricing">Pricing</a>
 
 <a href="#training">Training</a>
 
